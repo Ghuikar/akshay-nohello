@@ -1,36 +1,111 @@
-Please Don’t Just Say Hello In Chat
-TL;DR
-Modern chat communication should be done in a way that saves time for all participants and enables an efficient, asynchronous exchange of information. Don’t expect an answer if you just write “Hello” in chat. Don’t call someone out of the blue. Instead, phrase a message that allows your chat partners to provide a meaningful response as soon as they allocate time to read and answer your message.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-Chat Etiquette
-2010-07-19 12:32:12 you: Hello
-2010-07-19 12:32:15 co-worker: Hi.
-# CO-WORKER WAITS WHILE YOU PHRASE YOUR QUESTION
-2010-07-19 12:34:01 you: I'm working on [something] and I'm trying to do [etc...]
-2010-07-19 12:35:21 co-worker: Oh, that's [answer...]
-It’s as if you called someone on the phone and said “Hello!” and then put them on hold!
+<title>Hello is Metadata</title>
 
-Please do this instead:
+<style>
+body{
+    font-family: Segoe UI, Arial, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    line-height: 1.7;
+    background:#fafafa;
+    color:#222;
+}
 
-2010-07-19 12:32:12 you: Hello -- I'm working on [something] and I'm trying to do [etc...]
-2010-07-19 12:33:32 co-worker: [answers question]
-Note that you get help minutes sooner, and you don’t make them wait. Instead, the co-worker can start thinking about your question right away!
+h1{
+    font-size:48px;
+    border-bottom:1px solid #ddd;
+    padding-bottom:20px;
+}
 
-You’re trying to be polite by not jumping right into the request, like you would do in person or on the phone. But Chat is neither of those things. Typing is much slower than talking. Instead of being polite, you are just making the other person wait for you to phrase your question, which is lost productivity.
+h2{
+    margin-top:50px;
+}
 
-The same goes for “Hello – Are you there?”, “Hi Bob – quick question.”, “Do you have a sec ?”, “yt?” and “ping”. Just ask the question!
+.code{
+    background:#f4f4f4;
+    padding:20px;
+    border-radius:8px;
+    font-family:Consolas, monospace;
+    overflow:auto;
+}
 
-If you feel it’s brusque to simply say “Hi” and ask the question, you can do something like this:
+.highlight{
+    font-weight:bold;
+}
 
-2010-07-19 12:32:12 you: Hi -- if you're not busy I was wondering if I could ask a question. I'm working on [something] and I'm trying to do [etc...]
-Additionally, asking your question before getting a reply allows asynchronous communication. If the other party is away, and you leave before they come back, they can still answer your question, instead of just staring at a “Hello” and wondering what they missed.
+.footer{
+    margin-top:50px;
+    color:#666;
+}
+</style>
+</head>
 
-Call Etiquette
-Don’t call someone out of the blue. Respect that your desired call partner might be busy and in flow. Calling someone means you request immediate, full attention, interrupting any other activity. Some people like to probe with an initial “hello” to verify whether the presence status shown is true, hoping they can determine whether the recipient is near a device, then will immediately follow up with a call. Don’t do that either. If someone is able and willing to answer a chat message, it does not mean that they are also available for a voice or video call.
+<body>
 
-Instead of sending a call probe, or asking “hey, do you have time for a call?” (which is better but not great), you can try something like this:
+<h1>📡 Hello is Metadata. The Question is Payload.</h1>
 
-2020-07-08 12:32:12 you: Hi - do you have X min for a quick call to talk about XYZ? [etc...]
-This does three things: it time bounds the request, it gives the recipient some context, and it helps you remember what you wanted to talk about if the recipient can’t or doesn’t respond until later.
+<h2>TL;DR</h2>
 
-The source for this website is open and available on GitHub.
+<p>
+Modern chat communication works best when context and the actual question
+are sent together.
+</p>
+
+<p>
+<span class="highlight">
+Please include your question in the first message.
+</span>
+This allows asynchronous communication and helps everyone save time.
+</p>
+
+<h2>Chat Etiquette</h2>
+
+<div class="code">
+2026-10-19 10:00 You: Hi<br>
+2026-10-19 10:01 Co-worker: Hi<br>
+<br>
+...waiting...<br>
+<br>
+2026-10-19 10:10 You: I have a deployment issue.
+</div>
+
+<p>
+Instead, try:
+</p>
+
+<div class="code">
+2026-10-19 10:00 You:<br><br>
+
+Hi, I'm troubleshooting a deployment issue in MCPQ DEV.
+I'm getting a timeout during order sync.
+
+Can you help me understand whether there are any known issues?
+</div>
+
+<p>
+The recipient can start thinking immediately and respond whenever available.
+</p>
+
+<h2>Preferred Request Format</h2>
+
+<div class="code">
+{
+  "context": "...",
+  "problem": "...",
+  "what_i_tried": "...",
+  "question": "..."
+}
+</div>
+
+<p class="footer">
+🚀 Async-friendly mode enabled.
+</p>
+
+</body>
+</html>
